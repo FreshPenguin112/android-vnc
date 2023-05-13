@@ -8,4 +8,4 @@ This is android-vnc
 - Set a good password
 - Make sure start on boot is off
 - Press start
-- ![](/foobar.png)
+- ![](/foo.png)
