@@ -20,7 +20,7 @@ this will only work on a normal wifi network, not mobile data like 5G or 4G or a
 - Wait for any loading things go away
 - Paste this command and press enter 
 ```bash
-eval "$(echo 'confirm() { read -r -p "${1:-Please type '\''y'\'' and press enter anytime it stops and asks, Are you ready to Begin? [y/N]} " response; case "$response" in [yY][eE][sS]|[yY]) true;; *) false;; esac; }')"; cd .. && termux-change-repo && confirm && pkg update; pkg upgrade; pkg i python python-pip nodejs git wget curl iproute2; pkg i python-numpy; git clone https://github.com/novnc/noVNC; pip install websockify; x=$(ip -o -4 addr list wlan0 | awk '{print $4}' | cut -d/ -f1); echo "open this website on another device on the same wifi network: 'http://$x:6080/vnc.html'"; websockify --web ./noVNC/ 6080 ${x}:5900
+eval "$(echo 'confirm() { read -r -p "${1:-Please type '\''y'\'' and press enter anytime it stops and asks, Are you ready to Begin? [y/N]} " response; case "$response" in [yY][eE][sS]|[yY]) true;; *) false;; esac; }')"; cd .. && confirm && pkg update; pkg upgrade; pkg i python python-pip nodejs git wget curl iproute2; pkg i python-numpy; git clone https://github.com/novnc/noVNC; pip install websockify; x=$(ip -o -4 addr list wlan0 | awk '{print $4}' | cut -d/ -f1); echo "open this website on another device on the same wifi network: 'http://$x:6080/vnc.html'"; websockify --web ./noVNC/ 6080 ${x}:5900
 ```
 - Follow given instructions in termux
 You can now open the link it gave you on another device on the same wifi network then click connect, I recommend changing the settings to this:
