@@ -3,8 +3,8 @@ This is android-vnc, a repository for using android devices from another device 
 ### **Disclaimer**
 this will only work on a normal wifi network, not mobile data like 5G or 4G or anything
 ### **Prerequisites**
-- First install [Termux](https://termux.com) from [F-Droid Download](https://f-droid.org/repo/com.termux_118.apk) (automatically starts download)
-- Next install [DroidVNC-NG](https://github.com/bk138/droidVNC-NG) from [F-Droid Download](https://f-droid.org/repo/net.christianbeier.droidvnc_ng_18.apk) (automatically starts download)
+- First install [Termux](https://termux.com) from the [F-Droid Download](https://f-droid.org/repo/com.termux_118.apk) (automatically starts download)
+- Next install [DroidVNC-NG](https://github.com/bk138/droidVNC-NG) from the [F-Droid Download](https://f-droid.org/repo/net.christianbeier.droidvnc_ng_18.apk) (automatically starts download)
 ### **Setup**
 - Open DroidVNC-NG
 - Set port to 5900
